@@ -1,0 +1,222 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Wallet Backend API",
+    "dateExported": "2023-09-05T22:55:27.601Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "21266a59-affa-4880-ad04-3ea5cf98fa72",
+            "name": "Categories",
+            "containerId": "",
+            "created": "2023-08-16T22:16:50.122Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "0f3acbfc-e993-40f8-b7ba-8d05f8141313",
+            "name": "User",
+            "containerId": "",
+            "created": "2023-08-21T20:06:43.345Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "f9d4c52e-a067-44b0-bd41-38810b0e7f64",
+            "name": "Finances",
+            "containerId": "",
+            "created": "2023-08-21T22:15:15.520Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "3cb95eb5-e688-470b-a4d7-5cc2425588d1",
+            "colId": "fa806336-0efb-4d50-b9f6-45aaf598ada0",
+            "containerId": "",
+            "name": "Initial",
+            "url": "http://localhost:3000/categories",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-16T21:39:42.945Z",
+            "modified": "2023-08-16T22:02:16.404Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ac6ccd10-01fd-4c81-b5f9-6123da18e85b",
+            "colId": "fa806336-0efb-4d50-b9f6-45aaf598ada0",
+            "containerId": "21266a59-affa-4880-ad04-3ea5cf98fa72",
+            "name": "Get",
+            "url": "http://localhost:3000/categories/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-16T22:02:46.121Z",
+            "modified": "2023-08-16T23:21:18.455Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c67ef37b-a05e-4536-a275-e01e2af3b232",
+            "colId": "fa806336-0efb-4d50-b9f6-45aaf598ada0",
+            "containerId": "21266a59-affa-4880-ad04-3ea5cf98fa72",
+            "name": "Delete",
+            "url": "http://localhost:3000/categories/1",
+            "method": "DELETE",
+            "sortNum": 15000,
+            "created": "2023-08-16T22:43:55.380Z",
+            "modified": "2023-08-16T23:21:16.472Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "60157321-a9c1-45fe-a2a4-eab049b2d286",
+            "colId": "fa806336-0efb-4d50-b9f6-45aaf598ada0",
+            "containerId": "21266a59-affa-4880-ad04-3ea5cf98fa72",
+            "name": "Update",
+            "url": "http://localhost:3000/categories/5",
+            "method": "PUT",
+            "sortNum": 17500,
+            "created": "2023-08-21T19:45:03.431Z",
+            "modified": "2023-08-21T21:55:51.278Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Mercado\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7a3b215d-c1db-496a-b42e-7872c4b29239",
+            "colId": "fa806336-0efb-4d50-b9f6-45aaf598ada0",
+            "containerId": "21266a59-affa-4880-ad04-3ea5cf98fa72",
+            "name": "Post (Create)",
+            "url": "http://localhost:3000/categories",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-16T22:17:30.049Z",
+            "modified": "2023-08-21T21:53:57.970Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Roupas\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e6e8fef4-22e6-4d93-b16f-ba054d8d989b",
+            "colId": "fa806336-0efb-4d50-b9f6-45aaf598ada0",
+            "containerId": "0f3acbfc-e993-40f8-b7ba-8d05f8141313",
+            "name": "Post (create)",
+            "url": "http://localhost:3000/users",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-08-21T20:08:40.447Z",
+            "modified": "2023-08-21T20:20:18.506Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Gabriel Martins\",\n  \"email\": \"bilzims@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9d1917d6-ba9d-43c0-a0dc-eccb1b083851",
+            "colId": "fa806336-0efb-4d50-b9f6-45aaf598ada0",
+            "containerId": "0f3acbfc-e993-40f8-b7ba-8d05f8141313",
+            "name": "Update",
+            "url": "http://localhost:3000/users",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-08-21T21:30:03.875Z",
+            "modified": "2023-08-21T21:42:58.108Z",
+            "headers": [
+                {
+                    "name": "email",
+                    "value": "bilzims@gmail.com"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Gabriel Martins\",\n  \"email\": \"bilzims@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "acd774cf-e1d4-4ca7-818d-f8336abf87e8",
+            "colId": "fa806336-0efb-4d50-b9f6-45aaf598ada0",
+            "containerId": "f9d4c52e-a067-44b0-bd41-38810b0e7f64",
+            "name": "Post (create)",
+            "url": "http://localhost:3000/finances",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-08-21T22:15:45.137Z",
+            "modified": "2023-08-21T22:26:40.651Z",
+            "headers": [
+                {
+                    "name": "email",
+                    "value": "bilzims@gmail.com"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"category_id\": 3,\n  \"title\": \"Lanche BK\",\n  \"date\": \"2023-08-21\",\n  \"value\": 39.90\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ebfb0f5f-5cb5-498b-8cf9-a4dd94796837",
+            "colId": "fa806336-0efb-4d50-b9f6-45aaf598ada0",
+            "containerId": "f9d4c52e-a067-44b0-bd41-38810b0e7f64",
+            "name": "Delete",
+            "url": "http://localhost:3000/finances/5",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-09-05T22:04:10.488Z",
+            "modified": "2023-09-05T22:05:53.318Z",
+            "headers": [
+                {
+                    "name": "email",
+                    "value": "bilzims@gmail.com"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b9e5fb5d-54e8-4067-94d6-ce82e42ca486",
+            "colId": "fa806336-0efb-4d50-b9f6-45aaf598ada0",
+            "containerId": "f9d4c52e-a067-44b0-bd41-38810b0e7f64",
+            "name": "Get",
+            "url": "http://localhost:3000/finances?date=2023-08-15",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-09-05T22:18:25.285Z",
+            "modified": "2023-09-05T22:27:40.881Z",
+            "headers": [
+                {
+                    "name": "email",
+                    "value": "bilzims@gmail.com"
+                }
+            ],
+            "params": [
+                {
+                    "name": "date",
+                    "value": "2023-08-15",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
